@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="style.css" rel="stylesheet">
+    <title>Team Maps</title>
+  </head>
+  <body onload="ucitajPodatke()">
+      
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '224816561339578',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+      
+
+      
+      <header><h1>Team Maps</h1></header>
+    <nav>
+        <a href="#1" class="navel">Home</a>
+        <a href="#2" class="navel">Filter</a>
+        <a href="#3" class="navel">Marker</a>
+        <a href="#4" class="navel">Intro</a>
+        <a href="#5" class="navel">Tim Tim maps</a>
+    </nav>
+    <div id="ayy">
+    <div id="markeri"></div>
+    <div id="map"></div>
+    <div id="feed"></div>
+      </div>
+    <div id ="black"></div>
+    <button onclick="spremiPodatke()">Spremi markere</button>
+   
+  <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+  </div>        
+      
+
+      
+
+
+      
+      
+      
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjP0mIv4XxH3DQo42HExq-IKmY0gjjyq4&callback=initMap"> </script>
+      <script src="googleAPI.js"></script>
+  </body>
+</html>
