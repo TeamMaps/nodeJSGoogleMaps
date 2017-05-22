@@ -1,8 +1,4 @@
-#map {
-       height:400px;
-       width:45%;
-       float: left;
-       }
+
 header {
     text-align: center;
     background-image: url(https://static.pexels.com/photos/5110/road-dawn-mountains-sky.jpeg);
@@ -13,6 +9,8 @@ header {
 
 body {
     margin:0px;
+    padding: 0px;
+    padding-top: 3.65em;
 }
 
 .navel {
@@ -63,3 +61,41 @@ nav {
     height:100px;
     width:100px;
 }
+
+
+
+.page-header {
+  padding-top: 1em;
+}
+
+.fb-login-button {
+    position:relative;
+    top: 1em;
+    right:1.5em;
+}
+
+
+
+.navbar-brand {
+    position:relative;
+    right:2em;
+    bottom:0.5em;
+}
+
+
+
+#map {
+    height:30em;
+}
+
+
+
+
+
+.col-sm-6 {
+    padding: 0px !important;
+}
+
+
+
+

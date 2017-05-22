@@ -14,7 +14,7 @@ function initMap() {
         });
      //listener je property mape
         map.addListener('click', function(e) {
-        placeMarker(e.latLng, map);
+        $('#myModal').modal();
         });
 }                                 // stvara globalnu varijablu mapa s centrom u Rijeci(default)
 
