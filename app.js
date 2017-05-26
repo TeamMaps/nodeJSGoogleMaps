@@ -9,9 +9,10 @@ var bodyParser = require('body-parser')
 
 var app = express();
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+app.use(bodyParser.urlencoded({   // to support URL-encoded bodies
     extended: true
 })); 
+app.use(express.static('public'));
 var connection = mysql.createConnection({
     host:     'localhost',
     user:     'root',
@@ -20,6 +21,9 @@ var connection = mysql.createConnection({
 });
 connection.connect();
 
+app.get('/server',function(req,res){
+    console.log(req.query.name,req.query.prezime);
+})
 app.post('/server',function(req,res){
    for(x in req.body)
    console.log(req.body[x]);
@@ -33,10 +37,7 @@ app.post('/server',function(req,res){
 //     });
 //});
 app.get('/', function (req, res) {
-    
-    app.use(express.static('public'));
-   res.sendFile('index.html', {root: __dirname});
-    
+   res.sendFile('index.html', {root: __dirname}); 
 });
 
         

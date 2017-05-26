@@ -1,14 +1,13 @@
-
-  window.fbAsyncInit = function() {
+ window.fbAsyncInit = function() {
     FB.init({
       appId      : '224816561339578',
       xfbml      : true,
       version    : 'v2.9'
     });
     FB.AppEvents.logPageView();
-  };
+   };
 
-  (function(d, s, id){
+   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
@@ -18,8 +17,11 @@
 
 //inicijalizacija
 
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-
-// provjera log-in statusa
+//FB.getLoginStatus(function(response) {
+//  if (response.status === 'connected') {
+ //   console.log('Logged in.');
+ // }
+ // else {
+ //   FB.login();
+ // }
+//});

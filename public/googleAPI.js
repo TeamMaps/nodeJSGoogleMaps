@@ -53,6 +53,14 @@ function ucitajPodatke(){
     for(var i = 0; i < markers.length ; i++){
         markerReviver(markers[i], map)
     }
+   // FB.getLoginStatus(function(response) {
+  //  if (response.status === 'connected') {
+   // console.log('Logged in.');
+  // }
+  //  else {
+   // FB.login();
+  // }
+  // });
 } // body onload funkcija koja poziva markerReviver na svaki element markers arraya
 
 function spremiPodatke(){
